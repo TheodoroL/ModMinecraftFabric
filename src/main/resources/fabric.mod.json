@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "modsapecagem",
+	"version": "${version}",
+	"name": "ModSapecagem",
+	"description": "Primeiro mod",
+	"authors": [
+		"Duck"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modsapecagem/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.theodorol.modsapcagem.ModSapecagem"
+		],
+		"client": [
+			"com.theodorol.modsapcagem.client.ModSapecagemClient"
+		]
+	},
+	"mixins": [
+		"modsapecagem.mixins.json",
+		{
+			"config": "modsapecagem.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
