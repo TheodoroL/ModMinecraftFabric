@@ -34,6 +34,8 @@ public class ModItems {
             .build();
 
     public static final FoodProperties POISON_FOOD_COMPONENT = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationModifier(4)
             .alwaysEdible()
             .build();
 

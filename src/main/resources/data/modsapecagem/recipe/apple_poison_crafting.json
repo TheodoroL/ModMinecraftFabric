@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#S"
+  ],
+  "key": {
+    "#": "minecraft:apple",
+    "S": "modsapecagem:suspicious_substance"
+  },
+  "result": {
+    "id": "modsapecagem:apple_poison",
+    "count": 1
+  }
+}
